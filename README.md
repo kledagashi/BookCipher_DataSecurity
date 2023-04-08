@@ -9,6 +9,10 @@ A [university](https://fiek.uni-pr.edu) team project made by 4 students.
 #### Contributors
 
 
+- [Gentrit Kryeziu](https://github.com/Gentrit851)
+
 - [Klajdi Gashi](https://github.com/KlajdiGashi)
 
 - [Kleda Gashi](https://github.com/kledagashi)
+
+- [Krenare Kryeziu](https://github.com/Krenare158)
