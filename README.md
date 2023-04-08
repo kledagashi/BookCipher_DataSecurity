@@ -1,4 +1,4 @@
-# DataSecurityProject
+# Data Security Project
 
 Programming with one of the algorythms for encryption. 
 
