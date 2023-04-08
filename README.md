@@ -1,6 +1,6 @@
 # DataSecurityProject
 
-This project includes implementation of a book cipher which uses a text document as a book.
+This project includes the implementation of a book cipher which uses a text document as a book.
  
 
 A university team project made by 4 students. 
