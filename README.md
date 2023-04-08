@@ -8,6 +8,9 @@ A university team project made by 4 students.
 Contributors
 
 Gentrit Kryeziu
+
 Klajdi Gashi 
+
 Kleda Gashi
+
 Krenare Kryeziu 
