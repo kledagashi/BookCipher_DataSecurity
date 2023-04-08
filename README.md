@@ -1,16 +1,13 @@
 # DataSecurityProject
 
-This project includes the implementation of a book cipher which uses a text document as a book.
- 
+Programming with one of the algorythms for encryption. 
+The idea behind this project is implementing a book cipher which uses a text document as a book.
 
-A university team project made by 4 students. 
+A [university](https://fiek.uni-pr.edu) team project made by 4 students.
 
-Contributors:
+#### Contributors
 
-Gentrit Kryeziu
 
-Klajdi Gashi 
+- [Klajdi Gashi](https://github.com/KlajdiGashi)
 
-Kleda Gashi
-
-Krenare Kryeziu 
+- [Kleda Gashi](https://github.com/kledagashi)
