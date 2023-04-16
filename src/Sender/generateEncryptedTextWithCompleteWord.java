@@ -18,7 +18,7 @@
             }
         }
         catch (RuntimeException e){
-            System.err.println("There is something wrong with the programme, please try again or check your input");
+            System.err.println("There is something wrong with the program, please try again or check your input");
         }
             if (encryptedTextWithCompleteWord.isEmpty()){
                 throw new RuntimeException("Book doesn't contain one of the words that you have typed, or your word has been typed incorrectly");
