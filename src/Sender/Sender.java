@@ -1,5 +1,5 @@
 
-public class Sender {
+ class Sender {
     public ArrayList<String> myEncryptedTextWithCompleteWords;
     public ArrayList<String> myEncryptedTextWithSingleLetter;
     private String myPlainText;
