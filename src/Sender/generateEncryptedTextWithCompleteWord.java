@@ -1,18 +1,25 @@
-public ArrayList<String> generateEncryptedTextWithCompleteWord(ArrayList<String> plaintextAsArrayOfWords, ArrayList<ArrayList<String>> bookAsArrayOfRows) {
+    public ArrayList<String> generateEncryptedTextWithCompleteWord(ArrayList<String> plaintextAsArrayOfWords, ArrayList<ArrayList<String>> bookAsArrayOfRows) {
         ArrayList<String> encryptedTextWithCompleteWord = new ArrayList<>();
-        int i = 0;
-        for (ArrayList<String> row : bookAsArrayOfRows) {
-            for (String wordOfBook : row) {
-                if (i < plaintextAsArrayOfWords.size()) {
-                    if (wordOfBook.equalsIgnoreCase(plaintextAsArrayOfWords.get(i))) {
-                        encryptedTextWithCompleteWord.add((bookAsArrayOfRows.indexOf(row) + 1) + "/" + (row.indexOf(wordOfBook) + 1));
-                        i++;
+        try {
+            int numberOfWordsThatHaveBeenFound = 0;
+            for (int i = 0; i < bookAsArrayOfRows.size(); i++) {
+                for (int j = 0; j < bookAsArrayOfRows.get(i).size(); j++) {
+                    if (numberOfWordsThatHaveBeenFound < plaintextAsArrayOfWords.size()) {
+                        if (bookAsArrayOfRows.get(i).get(j).equalsIgnoreCase(plaintextAsArrayOfWords.get(numberOfWordsThatHaveBeenFound))) {
+                            encryptedTextWithCompleteWord.add((i + 1) + "/" + (j + 1));
+                            numberOfWordsThatHaveBeenFound++;
+                            i = 0;
+                            j = 0;
+                        }
                     }
-                }
-                else {
-                    return encryptedTextWithCompleteWord;
+                    else if (numberOfWordsThatHaveBeenFound == plaintextAsArrayOfWords.size()) {
+                        return encryptedTextWithCompleteWord;
+                    }
                 }
             }
         }
-        return encryptedTextWithCompleteWord;
+        catch (RuntimeException e) {
+            System.err.println("Book doesn't contain one of the words that you have typed, or your word has been typed incorrectly");
+        }
+        return plaintextAsArrayOfWords;
     }
