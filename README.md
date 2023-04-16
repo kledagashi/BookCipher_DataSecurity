@@ -2,7 +2,8 @@
 
 Programming with one of the algorythms for encryption. 
 
-The idea behind this project is implementing a book cipher which uses a text document as a book.
+The idea behind this project is implementing a book cipher which uses a text document as a book. 
+The execution of the cipher was made using Java Programming Language.
 
 A [university](https://fiek.uni-pr.edu) team project made by 4 students.
 
