@@ -15,6 +15,21 @@ class Reciever extends Person {
     }
 
     private ArrayList<ArrayList<Integer>> createArrayOutOfKey(ArrayList<String> encryptedText) {
-
+        ArrayList<ArrayList<Integer>> rowAndPosition = new ArrayList<>();
+        String array[];
+        for (String key : encryptedText) {
+            ArrayList<Integer> tempInt = new ArrayList<>();
+            ArrayList<String> tempString = new ArrayList<>();
+     
+            array = key.split("/");
+            Collections.addAll(tempString, array);
+     
+            for (String s : tempString) {
+                tempInt.add(Integer.parseInt(s));
+            }
+            rowAndPosition.add(tempInt);
+        }
+        return rowAndPosition;
+     
     }
 }
