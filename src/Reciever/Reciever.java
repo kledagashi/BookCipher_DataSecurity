@@ -12,6 +12,9 @@ class Reciever extends Person {
     System.out.println("\n"+"Hello Sender! I was able to crack your code and this is what i found out: " + "\n" + this.plainTextIfCompleteWord);
     System.out.println(this.plainTextIfSingleLetter);
 
-     
+    }
+
+    private ArrayList<ArrayList<Integer>> createArrayOutOfKey(ArrayList<String> encryptedText) {
+
     }
 }
