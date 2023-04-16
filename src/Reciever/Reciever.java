@@ -38,6 +38,7 @@ class Reciever extends Person {
    for (ArrayList<Integer> rowNumb : encryptedText) {
        plainText += bookAsArrayOfRows.get(rowNumb.get(0) - 1).get(rowNumb.get(1) - 1) + " ";
    }
+   return "If you used Complete Word Encoding then this is the message:  [" + plainText.toUpperCase() + "]";
 }
 
 }
