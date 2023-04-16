@@ -1,4 +1,5 @@
 # Data Security Project
+Group 24
 
 ### General info
 
