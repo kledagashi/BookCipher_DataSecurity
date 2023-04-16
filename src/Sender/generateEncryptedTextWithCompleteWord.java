@@ -21,5 +21,5 @@
         catch (RuntimeException e) {
             System.err.println("Book doesn't contain one of the words that you have typed, or your word has been typed incorrectly");
         }
-        return plaintextAsArrayOfWords;
+        return encryptedTextWithCompleteWord;
     }
