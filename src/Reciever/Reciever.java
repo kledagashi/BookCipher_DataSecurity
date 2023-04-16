@@ -40,5 +40,14 @@ class Reciever extends Person {
    }
    return "If you used Complete Word Encoding then this is the message:  [" + plainText.toUpperCase() + "]";
 }
+public String generatePlaintextIfSingleLetter(ArrayList<ArrayList<Integer>> encryptedText, ArrayList<ArrayList<String>> bookAsArrayOfRows) {
+        String plainText = "";
+        String wordsThatWereUsed = "";
+        for (ArrayList<Integer> rowNumb : encryptedText) {
+            plainText += bookAsArrayOfRows.get(rowNumb.get(0) - 1).get(rowNumb.get(1) - 1).charAt(0) + " ";
+            wordsThatWereUsed += bookAsArrayOfRows.get(rowNumb.get(0) - 1).get(rowNumb.get(1) - 1) + ", ";
+        }
+        return "But if you used Single Letter encoding this is the message :  [" + plainText.toUpperCase() + "]" + "\n" + "And the words that were used are: " + "[" + wordsThatWereUsed.toUpperCase() + "]";
+    }
 
 }
