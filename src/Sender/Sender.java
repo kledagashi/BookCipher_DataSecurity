@@ -14,6 +14,6 @@
         this.myEncryptedTextWithCompleteWords = this.generateEncryptedTextWithCompleteWord(this.plaintextAsArrayOfWords, this.bookAsArrayOfRows);
         this.myEncryptedTextWithSingleLetter = this.generateEncryptedTextWithSingleLetter(this.plaintextAsArrayOfCharacters, this.bookAsArrayOfRows);
         System.out.println("Hello! This is my encrypted text with Complete Words: " + "\n " + this.myEncryptedTextWithCompleteWords);
-        System.out.println("Also if you need it here is it with Single Letter" + "\n " + this.myEncryptedTextWithSingleLetter);
+        System.out.println("Also here it is encrypted with Characters" + "\n " + this.myEncryptedTextWithSingleLetter);
     }
 
