@@ -1,11 +1,16 @@
 # Data Security Project
 
 ### General info
+
+A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security Subject*** made by 4 students. 
+
+
 Programming with one of the algorythms for encryption. 
 
 The idea behind this project is implementing a **book cipher** in which the key is some aspect of a book or other piece of text.
 
 The main strength of the book cipher is the *key*.
+
 
 ### Technologies 
 
@@ -13,9 +18,6 @@ The execution of the cipher was made using [Java](https://www.java.com/en/) Prog
 
 
 ### Contributors
-
-A [university](https://fiek.uni-pr.edu) team project made by 4 students.
-
 
 - [Gentrit Kryeziu](https://github.com/Gentrit851)
 
