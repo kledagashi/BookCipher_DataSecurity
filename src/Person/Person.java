@@ -1,14 +1,13 @@
 class Person {
- protected ArrayList<ArrayList<String>> bookAsArrayOfRows;
- protected String bookURL = "C:\\Users\\Admin\\IdeaProjects\\DataSec_Project02\\out\\production\\DataSec_Project02\\Crime and Punishment.txt";
- protected File bookFile;
+    protected ArrayList<ArrayList<String>> bookAsArrayOfRows;
+    protected File bookFile;
 
- public Person() throws IOException {
-   this.generateTheFile();
-   this.bookAsArrayOfRows = this.generateArrayOfRows();
- }
+    public Person(String bookURL) throws IOException {
+        this.generateTheFile(bookURL);
+        this.bookAsArrayOfRows = this.generateArrayOfRows();
+    }
 
- public void generateTheFile() {
-   this.bookFile = new File(this.bookURL);
- }
+    public void generateTheFile(String bookURL) {
+        this.bookFile = new File(bookURL);
+    }
 }
