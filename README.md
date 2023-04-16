@@ -2,8 +2,7 @@
 
 ### General info
 
-A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security Subject*** made by 4 students. 
-
+A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security*** subject and made by 4 students. 
 
 Programming with one of the algorythms for encryption. 
 
