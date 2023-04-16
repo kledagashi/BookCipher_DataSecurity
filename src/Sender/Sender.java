@@ -1,5 +1,5 @@
 
- class Sender {
+ class Sender extends Person {
     public ArrayList<String> myEncryptedTextWithCompleteWords;
     public ArrayList<String> myEncryptedTextWithSingleLetter;
     private String myPlainText;
