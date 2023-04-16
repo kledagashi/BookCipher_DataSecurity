@@ -1,9 +1,9 @@
-# Data Security Project
+# Data Security Project - Grupi 24
 
 
 ### General info
 
-A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security*** subject. Group 24
+A [university](https://fiek.uni-pr.edu) team project organized by ***Data Security*** subject.
 
 Programming with one of the algorythms for encryption. 
 
