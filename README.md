@@ -3,7 +3,8 @@
 ### General info
 Programming with one of the algorythms for encryption. 
 
-The idea behind this project is implementing a **book cipher** in which the key is some aspect of a book or other piece of text. The main strength of the book cipher is the *key*.
+The idea behind this project is implementing a **book cipher** in which the key is some aspect of a book or other piece of text. 
+The main strength of the book cipher is the *key*.
 
 ### Technologies 
 
