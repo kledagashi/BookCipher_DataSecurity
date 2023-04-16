@@ -32,4 +32,12 @@ class Reciever extends Person {
         return rowAndPosition;
      
     }
+
+    public String generatePlainTextIfCompleteWord(ArrayList<ArrayList<Integer>> encryptedText, ArrayList<ArrayList<String>> bookAsArrayOfRows) {
+   String plainText = "";
+   for (ArrayList<Integer> rowNumb : encryptedText) {
+       plainText += bookAsArrayOfRows.get(rowNumb.get(0) - 1).get(rowNumb.get(1) - 1) + " ";
+   }
+}
+
 }
