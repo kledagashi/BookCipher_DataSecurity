@@ -11,7 +11,7 @@ The execution of the cipher was made using [Java](https://www.java.com/en/) Prog
 
 A [university](https://fiek.uni-pr.edu) team project made by 4 students.
 
-#### Contributors
+### Contributors
 
 
 - [Gentrit Kryeziu](https://github.com/Gentrit851)
