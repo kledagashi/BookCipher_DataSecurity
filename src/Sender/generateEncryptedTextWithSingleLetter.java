@@ -1,18 +1,24 @@
-    public ArrayList<String> generateEncryptedTextWithSingleLetter(ArrayList<Character> plaintextAsArrayOfCharacters, ArrayList<ArrayList<String>> bookAsArrayOfRows) {
+    public ArrayList<String> generateEncryptedTextWithSingleLetter(ArrayList<Character> plaintextAsArrayOfCharacters, ArrayList<ArrayList<String>> bookAsArrayOfRows) throws IOException {
         ArrayList<String> encryptedTextWithSingleLetter = new ArrayList<>();
-        int i = 0;
-        for (ArrayList<String> row : bookAsArrayOfRows) {
-            for (String wordOfBook : row) {
-                if (i < plaintextAsArrayOfCharacters.size()) {
-                    if (wordOfBook.charAt(0) == Character.toLowerCase(plaintextAsArrayOfCharacters.get(i)) || wordOfBook.charAt(0) == plaintextAsArrayOfCharacters.get(i)) {
-                        encryptedTextWithSingleLetter.add((bookAsArrayOfRows.indexOf(row) + 1) + "/" + (row.indexOf(wordOfBook) + 1));
-                        i++;
+        try {
+            int numberOfCharactersThatHaveBeenFound = 0;
+            for (int i = 0; i < bookAsArrayOfRows.size(); i++) {
+                for (int j = 0; j < bookAsArrayOfRows.get(i).size(); j++) {
+                    if (numberOfCharactersThatHaveBeenFound < plaintextAsArrayOfCharacters.size()) {
+                        if (bookAsArrayOfRows.get(i).get(j).charAt(0) == Character.toLowerCase(plaintextAsArrayOfCharacters.get(numberOfCharactersThatHaveBeenFound)) || (bookAsArrayOfRows.get(i).get(j).charAt(0) == plaintextAsArrayOfCharacters.get(numberOfCharactersThatHaveBeenFound) || bookAsArrayOfRows.get(i).get(j).charAt(0) == Character.toUpperCase(plaintextAsArrayOfCharacters.get(numberOfCharactersThatHaveBeenFound)))) {
+                            encryptedTextWithSingleLetter.add((i + 1) + "/" + (j + 1));
+                            numberOfCharactersThatHaveBeenFound++;
+                            i = 0;
+                            j = 0;
+                        }
+                    }
+                    else if (numberOfCharactersThatHaveBeenFound == plaintextAsArrayOfCharacters.size()) {
+                        return encryptedTextWithSingleLetter;
                     }
                 }
-                else {
-                    return encryptedTextWithSingleLetter;
-                }
             }
+        } catch (RuntimeException e) {
+            System.err.println("There is no word that starts with one of the characters you have typed, or maybe the book contains no such words");
         }
-        return encryptedTextWithSingleLetter;
+        return myEncryptedTextWithSingleLetter;
     }
